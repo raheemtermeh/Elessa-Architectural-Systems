@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "singularName": "inquiry",
+    "pluralName": "inquiries",
+    "displayName": "پیش‌فاکتورها و استعلام‌ها (Inquiry)",
+    "description": "درخواست‌های ثبت‌شده مشتریان و کارفرمایان"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "trackingCode": {
+      "type": "string",
+      "required": true
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "projectType": {
+      "type": "string"
+    },
+    "systemInterest": {
+      "type": "string"
+    },
+    "estimatedPriceToman": {
+      "type": "biginteger"
+    },
+    "dimensionsNote": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["pending", "reviewed", "contacted"],
+      "default": "pending"
+    }
+  }
+}

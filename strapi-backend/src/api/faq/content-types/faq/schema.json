@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "سوالات متداول (FAQ)",
+    "description": "پرسش‌های پرتکرار مشتریان و پاسخ‌های فنی"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "محصولات السا (Product)",
+    "description": "درب‌های اتوماتیک، کرکره‌های برقی، هندریل‌ها و نمای اسپایدر"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "modelCode": {
+      "type": "string",
+      "required": true
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "categorySlug": {
+      "type": "string",
+      "required": true
+    },
+    "categoryLabel": {
+      "type": "string"
+    },
+    "applicationLabels": {
+      "type": "json"
+    },
+    "image": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "engineeringNote": {
+      "type": "text"
+    },
+    "pricingUnit": {
+      "type": "enumeration",
+      "enum": ["opening", "linear-meter", "square-meter"]
+    },
+    "pricingUnitLabel": {
+      "type": "string"
+    },
+    "basePriceToman": {
+      "type": "biginteger"
+    },
+    "defaultWidth": {
+      "type": "decimal"
+    },
+    "defaultHeight": {
+      "type": "decimal"
+    },
+    "standardCode": {
+      "type": "string"
+    },
+    "warrantyYears": {
+      "type": "integer"
+    },
+    "leadTimeDays": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "specs": {
+      "type": "json"
+    },
+    "finishes": {
+      "type": "json"
+    }
+  }
+}

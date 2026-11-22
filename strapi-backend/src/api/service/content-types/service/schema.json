@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "خدمات و سیستم‌ها (Service)",
+    "description": "چهار ستون خدمات و سیستم‌های اصلی السا"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "categorySlug": {
+      "type": "string"
+    },
+    "iconType": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "json"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

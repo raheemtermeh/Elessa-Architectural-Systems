@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  strapi:
+    container_name: elessa-strapi
+    build: .
+    image: elessa-strapi:latest
+    restart: unless-stopped
+    env_file: .env.example
+    environment:
+      DATABASE_CLIENT: sqlite
+      DATABASE_FILENAME: .tmp/data.db
+      JWT_SECRET: elessaUsersJwtSecret2026
+      ADMIN_JWT_SECRET: elessaAdminJwtSecret2026SuperSecure
+      APP_KEYS: elessaKey1,elessaKey2,elessaKey3,elessaKey4
+      API_TOKEN_SALT: elessaApiTokenSalt2026
+    volumes:
+      - ./.tmp:/opt/app/.tmp
+      - ./public/uploads:/opt/app/public/uploads
+    ports:
+      - "1337:1337"

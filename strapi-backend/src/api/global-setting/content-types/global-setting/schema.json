@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_settings",
+  "info": {
+    "singularName": "global-setting",
+    "pluralName": "global-settings",
+    "displayName": "تنظیمات عمومی سایت (Global Setting)",
+    "description": "اطلاعات برند، تلفن‌ها، آدرس و آمار کلیدی"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "brandNameFa": {
+      "type": "string",
+      "default": "السا"
+    },
+    "brandNameEn": {
+      "type": "string",
+      "default": "Elessa Architectural Systems"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "phone1": {
+      "type": "string"
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "phoneDisplay": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "workingHours": {
+      "type": "string"
+    },
+    "experienceYears": {
+      "type": "integer"
+    },
+    "completedProjectsCount": {
+      "type": "integer"
+    },
+    "clientSatisfactionRate": {
+      "type": "integer"
+    },
+    "installedAreaSqm": {
+      "type": "integer"
+    }
+  }
+}

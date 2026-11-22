@@ -1,0 +1,27 @@
+{
+  "name": "elessa-strapi-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Strapi Headless CMS Backend for Elessa Architectural Systems",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^4.25.10",
+    "@strapi/plugin-users-permissions": "^4.25.10",
+    "@strapi/plugin-i18n": "^4.25.10",
+    "better-sqlite3": "^12.11.1"
+  },
+  "author": {
+    "name": "Elessa Engineering Team"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
